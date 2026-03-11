@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zajímavosti | Matescz_</title>
+    <meta name="description" content="Zajímavosti a fakta o mně a mém světě Minecraftu.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="https://mc-heads.net/avatar/Matescz_/100" alt="Logo" class="nav-logo-img">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a href="about.html" class="nav-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                O mně
+            </a>
+            <a href="hobbies.html" class="nav-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                    </path>
+                </svg>
+                Koníčky
+            </a>
+            <a href="projects.html" class="nav-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3h18v18H3zM3 9h18M9 21V9"></path>
+                </svg>
+                Projekty
+            </a>
+            <a href="facts.html" class="nav-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+                Zajímavosti
+            </a>
+            <a href="staff.html" class="nav-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                Staff History
+            </a>
+            <a href="reviews.html" class="nav-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Hodnocení
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#" class="nav-item" style="font-size: 0.85rem; opacity: 0.7;">Login</a>
+            <a href="#" class="shop-btn" style="padding: 8px 15px; font-size: 0.85rem;">Register</a>
+        </div>
+    </nav>
+
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="blob"></div>
+    <div class="blob-2"></div>
+
+    <main class="hero">
+        <div class="hero-content" style="flex-direction: row; align-items: flex-start; gap: 3rem;">
+            <div class="profile-container hobbies">
+                <img src="https://mc-heads.net/player/random" alt="Random Skin" class="profile-img-full">
+            </div>
+
+            <div class="about-bubble-container" style="max-width: 600px;">
+                <div class="bubble">
+                    <h2 style="margin-bottom: 1.5rem;">Fun Quiz & Zajímavosti ⭐</h2>
+
+                    <div id="chat-history"
+                        style="margin-bottom: 2rem; max-height: 400px; overflow-y: auto; padding-right: 10px; display: flex; flex-direction: column; gap: 15px; scroll-behavior: smooth;">
+                        <!-- Sem se budou řadit zprávy -->
+                    </div>
+
+                    <div id="interactive-area" style="display: flex; flex-direction: column; align-items: flex-start;">
+                        <div id="typing-indicator" class="typing" style="display: none; margin-bottom: 15px;">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <button id="next-q-btn" class="shop-btn"
+                            style="border: none; cursor: pointer; padding: 10px 20px; font-size: 0.9rem;">
+                            Zeptat se na další věc ➔
+                        </button>
+                    </div>
+
+                    <p style="color: var(--text-muted); line-height: 1.6; font-size: 0.8rem; margin-top: 15px;">Klikni
+                        na tlačítko a historie se začne plnit!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="projects-container" style="padding-top: 50px;">
+        <div class="facts-grid">
+            <!-- Karty s fakty -->
+            <div class="fact-card reveal">
+                <div class="fact-icon">⛏️</div>
+                <div class="fact-info">
+                    <h3>Můj první Minecraft</h3>
+                    <p>Začínal jsem už na verzi 1.8 a dodnes je to jedna z mých nejoblíbenějších verzí pro PvP a
+                        servery.</p>
+                </div>
+            </div>
+            <div class="fact-card reveal">
+                <div class="fact-icon">🧟</div>
+                <div class="fact-info">
+                    <h3>První modpack</h3>
+                    <p>Můj první kontakt s mody byl Tekkit Classic, který mě naučil základy technických modů.</p>
+                </div>
+            </div>
+            <div class="fact-card reveal">
+                <div class="fact-icon">🚀</div>
+                <div class="fact-info">
+                    <h3>Ambice</h3>
+                    <p>Mým cílem je vytvořit platformu, která propojí Minecraft komunitu a pomůže novým tvůrcům v
+                        rozjezdu.</p>
+                </div>
+            </div>
+            <div class="fact-card reveal">
+                <div class="fact-icon">💎</div>
+                <div class="fact-info">
+                    <h3>Zkušenosti se servery</h3>
+                    <p>Pomohl jsem nastavit, optimalizovat a spravovat už více než 10 různých Minecraft komunit.</p>
+                </div>
+            </div>
+            <div class="fact-card reveal">
+                <div class="fact-icon">⚡</div>
+                <div class="fact-info">
+                    <h3>Nejoblíbenější blok</h3>
+                    <p>Jednoznačně Command Block – fascinuje mě, co všechno se dá vytvořit bez modů jen pomocí příkazů.
+                    </p>
+                </div>
+            </div>
+            <div class="fact-card reveal">
+                <div class="fact-icon">🔥</div>
+                <div class="fact-info">
+                    <h3>Rychlost učení</h3>
+                    <p>Základy webu jsem se naučil za rekordní čas, protože mě baví vidět výsledky mé práce okamžitě.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const quizData = [
+            { q: "Kolik ti je let???", a: "Je mi 14let." },
+            { q: "Kolik serverům jsi pomohl?...", a: "Pomohl jsem přes 12 serverům. Rád pomáhám serverům většinou jako Helper, Eventer nebo Technik :3" },
+            { q: "Jak dlouho hraješ Minecraft?", a: "Hraju ho už přes 6 let." },
+            { q: "Jakou verzi máš nejraději?", a: "Verzi 1.8 pro PvP a servery." },
+            { q: "Co tě nejvíc baví v MC?", a: "Command Blocky a technické věci." },
+            { q: "Jak dlouho programuješ?", a: "Programuju teprve 3 měsíce." },
+            { q: "Co umíš za jazyky?", a: "HTML, CSS, JavaScript a Node.js." },
+            { q: "Tvůj první velký projekt?", a: "Xelorland - ambiciózní Minecraft svět." },
+            { q: "Co děláš na projektu Majneec?", a: "Pracuji na modifikacích a čekám na nábor." },
+            { q: "Tvůj nejoblíbenější modpack?", a: "Jednoznačně Tekkit Classic." },
+            { q: "Jaký je tvůj největší cíl?", a: "Propojit celou Minecraft komunitu." }
+        ];
+
+        let currentQ = 0;
+        const chatHistory = document.getElementById('chat-history');
+        const typing = document.getElementById('typing-indicator');
+        const nextBtn = document.getElementById('next-q-btn');
+
+        function addMessage(text, type) {
+            const msg = document.createElement('div');
+            if (type === 'q') {
+                msg.style.cssText = "color: #fff; font-weight: 700; font-size: 1.1rem; align-self: flex-start; background: rgba(255,255,255,0.05); padding: 10px 15px; border-radius: 10px 10px 10px 0; border-left: 3px solid var(--accent);";
+            } else {
+                msg.className = "chat-bubble active";
+                msg.style.cssText = "color: var(--primary); font-weight: 800; font-size: 1.1rem; font-style: normal; align-self: flex-start; margin-left: 10px; border-left: 3px solid var(--primary); padding-left: 15px; animation: reveal 0.5s ease forwards;";
+            }
+            msg.innerText = text;
+            chatHistory.appendChild(msg);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        async function processQuiz() {
+            if (currentQ >= quizData.length) {
+                nextBtn.innerText = "To jsou všechna fakta! 🎉";
+                nextBtn.disabled = true;
+                nextBtn.style.opacity = "0.5";
+                return;
+            }
+
+            nextBtn.style.display = 'none';
+            addMessage(quizData[currentQ].q, 'q');
+
+            await new Promise(r => setTimeout(r, 500));
+            typing.style.display = 'inline-flex';
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+
+            await new Promise(r => setTimeout(r, 1500));
+            typing.style.display = 'none';
+            addMessage(quizData[currentQ].a, 'a');
+
+            currentQ++;
+            nextBtn.style.display = 'inline-flex';
+        }
+
+        nextBtn.addEventListener('click', processQuiz);
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+        reveal();
+
+        // Spustit první zprávu automaticky
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(processQuiz, 1000);
+        });
+    </script>
+    <script src="cursor.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
